@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "playwright": "^1.10.0"
+  },
+  "name": "velhoapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:infrapuna/velhoapi.git",
+  "author": "infrapuna <78515417+infrapuna@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
