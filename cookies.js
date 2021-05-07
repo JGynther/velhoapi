@@ -2,7 +2,7 @@ const { chromium } = require("playwright");
 const fs = require("fs");
 
 async function getCookies() {
-    const browser = await chromium.launch();
+    const browser = await chromium.launch({ args: ["--no-sandbox"] });
     const context = await browser.newContext();
     const page = await context.newPage();
 

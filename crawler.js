@@ -25,7 +25,7 @@ router.route("/stock/:ticker").get(async (req, res) => {
         storageState = JSON.parse(storage);
     }
 
-    const browser = await chromium.launch();
+    const browser = await chromium.launch({ args: ["--no-sandbox"] });
     const context = await browser.newContext({ storageState });
     const page = await context.newPage();
 
