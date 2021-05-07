@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { chromium } = require("playwright");
+const { chromium } = require("playwright-chromium");
 const fs = require("fs");
 const cookies = require("./cookies.js");
 
